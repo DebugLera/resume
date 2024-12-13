@@ -6,20 +6,23 @@
     <meta name="keywords" content="valeria, cv, resume">
     <meta name="description" content="Это сайт - резюме Валерии Александровой">
     <title>Valeria resume</title>
+    <link rel="stylesheet" href="resume.css">
 </head>
 <body>
     
+
+<div class="container">
+  
+<div class="info">
+    
     <img src="imgs/4.jpg" alt="Фото Валерии" width="200">
+
+    <div class="info-text">
     <h1>Александрова Валерия</h1>
-
-    <p>Я работаю как <strong><em>веб-дизайнер</em></strong> в течение 4 лет. 
-    Владею такими инструментами как: Figma, пакет Adobe, canva и Tilda</p>
-
+    <p>Я работаю как <strong><em>веб-дизайнер</em></strong> в течение 4 лет. Владею такими инструментами как: Figma, пакет Adobe, canva и Tilda</p>
     <p>Я люблю активные способы проведения досуга: футбол, лыжный спорт и другие активности</p>
 
-    <br>
     <h3>Список социальных сетей</h3>
-
     <p>
         <a href="https://t.me/Aleksandrova_lera" target="_blank">Telegram</a>
         |
@@ -27,21 +30,23 @@
         |
         <a href="https://vk.com/id44516423" target="_blank">Вконтакте</a>
     </p>
+</div>
+</div>
 
-    <br>
+
+    <div id="block3" class="card">
     <h3>Мои хобби</h3>
+    <ul class="list">
+        <li>1 - Футбол</li>
+        <li>2 - Чтение</li>
+        <li>3 - Беговые лыжи</li>
+        <li>4 - Путешествия</li>
+    </ul>
+</div>
 
-    <ol>
-        <li>Футбол</li>
-        <li>Чтение</li>
-        <li>Беговые лыжи</li>
-        <li>Путешествия</li>
-    </ol>
-
-    <br>
+    <div id="block4" class="card">
     <h3>Опыт работы</h3>
-
-    <table border="1" width="350">
+    <table class="table">
         <thead>
             <tr>
                 <th>Название</th>
@@ -67,30 +72,36 @@
             </tr>
         </tbody>
     </table>
+ </div>
 
-    <br>
+    <div id="block5" class="card 5">
+    <form class="form">
     <h3>Связаться со мной</h3>
 
-    <form>
-        <div>
+<div class="form-row">
+
+        <div class="form-group">
             <label for="name">Ваше имя:</label>
             <input type="name" id="name" placeholder="Введите имя">
         </div>
-    <br>
-    <div>
+        
+    <div class="form-group">
         <label for="email">Ваш email:</label>
         <input type="email" id="email" placeholder="Введите email">
     </div>
-    <br>
-    <div>
+</div>
+    
+    <div class="form-group2">
         <label for="message">Ваше сообщение:</label>
         <br>
         <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение"></textarea>
     </div>
-    <br>
-    <button type="submit">Отправить</button>
+    <button class="btn" type="submit">Отправить</button>
 
     </form>
+ </div>
+ 
+</div>
 
 </body>
 </html>
